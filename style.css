@@ -1,0 +1,151 @@
+.jumbotron {
+    background-image: url(img/heartsbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.arrowsvg {
+    width: 40px;
+    margin-top: 90px;
+}
+
+.bounce {
+    animation: bounce 2s ease-in infinite;
+}
+
+.display-2 {
+    color: #2E0E0E;
+    font-style: italic;
+}
+
+.button-container {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yes-button .no-button {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    background-color: blue;
+}
+
+.button-div {
+    margin: 10px;
+}
+
+.backup {
+    color: #2E0E0E;
+}
+
+.button-style {
+    background-color: pink;
+    border: 2px pink;
+    border-radius: 10%;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+h2 {
+    color: #9E6363;
+}
+
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+    display: flex; 
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide .photo-overlay {
+	opacity: 1;
+	background: black;
+}
+
+.photo-overlay {
+	opacity: 0;
+	transition: opacity .5s;
+}
+
+.photo-overlay:hover {
+	opacity: 1;
+}
+
+.slide .photo-overlay,
+.slide img {
+  transition: transform .9s ease-out;
+}
+
+
+.slide .photo-overlay {
+  transform: translateX(-100%);
+}
+
+.slide:hover .photo-overlay {
+  transform: translate(0);
+}
+
+.slide:hover img {
+  transform: translateX(100%);
+}
+
+  
+@keyframes bounce {
+
+        0%,
+        25%,
+        50%,
+        75%,
+        100% {
+        transform: translateY(0);
+    }
+        40% {
+        transform: translateY(-18px);
+    }
+         60% {
+        transform: translateY(-14px);
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .arrowsvg {
+        width: 30px;
+        margin-top: 90px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    .jumbotron {
+        min-height: 100vh;
+    }
+
+    .jumbocontainer {
+        margin-top: 5%;
+    }
+
+    .jumbocontainer .lead,
+    .jumbocontainer .display-2 {
+        font-weight: 430;
+    }
+
+    .arrowsvg {
+        width: 30px;
+        margin-top: 90px;
+    }
+}
