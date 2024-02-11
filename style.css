@@ -102,6 +102,10 @@ h2 {
   transform: translateX(100%);
 }
 
+.smileyFace {
+    width: 25%;
+    height: 25%;
+}
   
 @keyframes bounce {
 
